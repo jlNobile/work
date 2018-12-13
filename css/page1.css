@@ -1,7 +1,18 @@
-body {
-  background-color: blue;
+input {
+  margin-bottom: 5px;
 }
 
 label {
-  padding-right: 20em;
+  display: block;
+  float: left;
+  margin-bottom: 5px;
+  width: 180px;
+}
+
+.float_left {
+  float: left;
+}
+
+#right_col[div][label] {
+  margin-left: 10px;
 }
