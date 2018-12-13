@@ -9,10 +9,28 @@ label {
   width: 180px;
 }
 
+select {
+  margin-bottom: 5px;
+  height: 21.2px;
+  width: 168.8px;
+}
+
 .float_left {
   float: left;
 }
 
-#right_col[div][label] {
-  margin-left: 10px;
+.spacer_input {
+  border: none;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.spacer_label {
+  height: 18.8px;
+  width: 180px;
+}
+
+#right_col label {
+  padding-left: 12px;
 }
