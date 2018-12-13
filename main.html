@@ -20,23 +20,24 @@
       <div class="float_left">
 
       <label for="name">Name:</label>
-      <input type="text" id="name"><br>
+      <input type="text" id="name" onclick="myFunction()">
+      <span class="popuptext" id="myPopup">A Simple Popup!</span><br>
 
       <label for="statement_market_name">Statement Market Name:</label>
       <input type="text" id="statement_market_name"><br>
 
       <label for="dep_cat">Deposit Catagory:</label>
-      <input list="dep_cat_list" id="dep_cat"><br>
-        <datalist id="dep_cat_list">
-          <option value="(C) Certificate Of Deposit">
-          <option value="(D) Demand Deposit Account">
-          <option value="(K) Revolving Line Of Credit">
-          <option value="(L) Line Of Credit">
-          <option value="(M) Money Market">
-          <option value="(N) NOW Account">
-          <option value="(R) Repurchase Agreement">
-          <option value="(S) Savings Account">
-        </datalist>
+      <select id="dep_cat">
+        <option>Select An Option</option>
+        <option>(C) Certificate Of Deposit</option>
+        <option>(D) Demand Deposit Account</option>
+        <option>(K) Revolving Line Of Credit</option>
+        <option>(L) Line Of Credit</option>
+        <option>(M) Money Market</option>
+        <option>(N) NOW Account</option>
+        <option>(R) Repurchase Agreement</option>
+        <option>(S) Savings Account</option>
+      </select><br>
 
       <label for="retirement_plan_type">Retirement Plan Type:</label>
       <input type="text" id="retirement_plan_type"><br>
@@ -45,17 +46,18 @@
       <input type="text" id="stmt_cycle_code"><br>
 
       <label for="due_from_bank_acct">Due From Bank Account:</label>
-      <input list="due_from_bank_acct_list" id="due_from_bank_acct"><br>
-        <datalist id="due_from_bank_acct_list">
-          <option value="Yes">
-          <option value="No">
-        </datalist>
+      <select id="due_from_bank_acct_list">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select><br>
 
       <label for="club_acct">Club Account:</label>
-        <select id="club_acct">
-          <option value="Yes"></option>
-          <option value="No"></option>
-        </select><br>
+      <select id="club_acct">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select><br>
 
       <label for="bulkfile">Bulkfile:</label>
       <input type="text" id="bulkfile"><br>
@@ -67,34 +69,65 @@
       <input type="text" id="kite_suspect_plan"><br>
 
       <label for="reset_excess_tran_emo">Reset Excess Tran EMO:</label>
-      <input type="text" id="reset_excess_tran_emo"><br>
+      <select id="reset_excess_tran_emo">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select><br>
 
       <label for="cust_acct">Customer Account:</label>
-      <input type="text" id="cust_acct"><br>
+      <select id="cust_acct">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select><br>
 
       <label for="aas_type">AAS Type:</label>
       <input type="text" id="aas_type"><br>
 
       <label for="excess_occur_limit">Excess Occur Limit:</label>
-      <input type="text" id="excess_occur_limit"><br>
+      <select id="excess_occur_limit">
+        <option>Select An Option</option>
+        <option>(0) Option Not Used</option>
+        <option>(1) Post-No_Debits At First Glance</option>
+        <option>(2) Post-No_Debits At Second Glance</option>
+        <option>(3) Post-No_Debits At Third Glance</option>
+      </select><br>
 
       <label for="pay_accr_int_on_close">Pay Accr Int On Close:</label>
-      <input type="text" id="pay_accr_int_on_close"><br>
+      <select id="pay_accr_int_on_close">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select><br>
 
       <label for="cn_cy_mn_bl">Cn Cy Mn Bl:</label>
       <input type="text" id="cn_cy_mn_bl"><br>
 
       <label for="acct_num_gen">Acct Number Generator:</label>
-      <input type="text" id="acct_num_gen"><br>
+      <select id="acct_num_gen">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select><br>
 
       <label for="pcma_ind">PCMA Ind:</label>
-      <input type="text" id="pcma_ind"><br>
+      <select id="pcma_ind">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select><br>
 
       <label for="special_ref_outsrt_thres">Special Ref Outsrt Thrshld:</label>
       <input type="text" id="special_ref_outsrt_thres"><br>
 
       <label for="return_deb">Return Debits:</label>
-      <input type="text" id="return_deb"><br>
+      <select id="return_deb">
+        <option>Select An Option</option>
+        <option>(D) Process Based On Statement Closure Field</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select><br>
 
       <label for="benefit_mgmt_acct">Benefit Mgmt Acct:</label>
       <input type="text" id="benefit_mgmt_acct"><br>
@@ -103,13 +136,22 @@
       <input type="text" id="allow_mtt_ss_trsf_rel"><br>
 
       <label for="ta_nta">TA/NTA:</label>
-      <input type="text" id="ta_nta"><br>
+      <select id="ta_nta">
+        <option>Select An Option</option>
+        <option>(TA) Transaction Account</option>
+        <option>(NT) Non-Transaction Account</option>
+        <option>(NO) Not Using</option>
+      </select><br>
 
       <label for="cash_mgmt_acct">Cash Managment Acct:</label>
       <input type="text" id="cash_mgmt_acct"><br>
 
       <label for="cps_indicator">CPS Indicator:</label>
-      <input type="text" id="cps_indicator"><br>
+      <select id="cps_indicator">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select><br>
     </div>
     <div id="right_col">
       <label class="spacer_label"></label>
@@ -147,7 +189,7 @@
       <label for="excess_tran_r2057">Excess Tran R-2057:</label>
       <input type="text" id="excess_tran_r2057"><br>
 
-      <label for="aas_indicator">ASS Indicator:</label>
+      <label for="aas_indicator">AAS Indicator:</label>
       <input type="text" id="aas_indicator"><br>
 
       <label for="max_bal">Max Bal:</label>
@@ -191,6 +233,14 @@
     <input type="submit" value="Submit">
   </fieldset>
 </form>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
   <!-- <script src="js/scripts.js"></script> -->
 </body>
 </html>
