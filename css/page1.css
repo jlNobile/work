@@ -1,93 +1,38 @@
-input {
-  margin-bottom: 5px;
+label, input, select {
+  font-size: 9pt;
 }
 
-label {
-  display: block;
+/*input, .spacer_input {
+  height: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.75em;
+  width: 15em;
+}
+
+label, .spacer_label {
   float: left;
-  margin-bottom: 5px;
-  width: 180px;
+  height: 0.5em;
+  margin-bottom: 0.5em;
+  padding-top: 0.75;
+  padding-bottom: 0.75;
+  width: 11em;
 }
 
 select {
-  margin-bottom: 5px;
-  height: 21.2px;
-  width: 168.8px;
+  height: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 1.07em;
+  width: 16.75em;
 }
 
 .float_left {
   float: left;
 }
 
-/* Popup container - can be anything you want */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-
 .spacer_input {
   border: none;
-  margin-bottom: 5px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-.spacer_label {
-  height: 18.8px;
-  width: 180px;
 }
 
 #right_col label {
-  padding-left: 12px;
-}
+  padding-left: 1em;
+}*/
