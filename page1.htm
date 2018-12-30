@@ -1,0 +1,369 @@
+<div class="container">
+<h2>Deposit Account Basic Information</h2>
+<form class="form-horizontal" action="action.php" method="post">
+
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-3">
+      <a href="#" data-toggle="popover" data-content="Product Name. Account type name">
+        <input id="name" name="name" type="text" class="form-control">
+        <!--  <span class="glyphicon glyphicon-question-sign"></span> -->
+      </a>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="statement_market_name" class="col-sm-2 control-label">Statement Market Name</label>
+    <div class="col-sm-3">
+      <a href="#" data-toggle="popover" data-content="Name to appear on customer's statements">
+        <input id="statement_market_name" type="text" class="form-control">
+      </a>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="dep_cat" class="col-sm-2 control-label">Deposit Catagory</label>
+    <div class="col-sm-3">
+      <select id="dep_cat" class="form-control">
+        <option>Select An Option</option>
+        <option>(C) Certificate Of Deposit</option>
+        <option>(D) Demand Deposit Account</option>
+        <option>(K) Revolving Line Of Credit</option>
+        <option>(L) Line Of Credit</option>
+        <option>(M) Money Market</option>
+        <option>(N) NOW Account</option>
+        <option>(R) Repurchase Agreement</option>
+        <option>(S) Savings Account</option>
+      </select>
+    </div>
+
+    <label for="processing_level" class="col-sm-2 control-label">Processing Level</label>
+    <div class="col-sm-3">
+      <input id="processing_level" type="text" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for ="retirement_plan_type" class="col-sm-2 control-label">Retirement Plan Type</label>
+    <div class="col-sm-3">
+      <input id="retirement_plan_type" type="text" class="form-control">
+    </div>
+
+    <label for="cost_center" class="col-sm-2 control-label">Cost Center</label>
+    <div class="col-sm-3">
+      <input id="cost_center" type="text" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="stmt_cycle_code" class="col-sm-2 control-label">Stmt Cycle Code</label>
+    <div class="col-sm-3">
+      <input id="stmt_cycle_code" type="text" class="form-control">
+    </div>
+
+    <label for="analysis_cycle_code" class="col-sm-2 control-label">Analysis Cycle Code</label>
+    <div class="col-sm-3">
+      <input type="text" id="analysis_cycle_code" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="due_from_bank_acct" class="col-sm-2 control-label">Due From Bank Account</label>
+    <div class="col-sm-3">
+      <select id="due_from_bank_acct_list" class="form-control">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <label for="passbook_acct" class="col-sm-2 control-label">Passbook Account</label>
+    <div class="col-sm-3">
+      <input type="text" id="passbook_acct" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="club_acct" class="col-sm-2 control-label">Club Account</label>
+    <div class="col-sm-3">
+      <select id="club_acct" class="form-control">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <label for="empl_acct" class="col-sm-2 control-label">Employee Account</label>
+    <div class="col-sm-3">
+      <input type="text" id="empl_acct" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="bulkfile" class="col-sm-2 control-label">Bulkfile</label>
+    <div class="col-sm-3">
+      <input type="text" id="bulkfile" class="form-control">
+    </div>
+
+    <label for="coll_disb_bal_basis" class="col-sm-2 control-label">Coll/Disb Bal Basis</label>
+    <div class="col-sm-3">
+      <input type="text" id="coll_disb_bal_basis" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="sig_grace_days" class="col-sm-2 control-label">Signiture Grace Days</label>
+    <div class="col-sm-3">
+      <input type="text" id="sig_grace_days" class="form-control">
+    </div>
+
+    <label for="high_dollar_outsort_thres" class="col-sm-2 control-label">High $ Outsort Threshold</label>
+    <div class="col-sm-3">
+      <input type="text" id="high_dollar_outsort_thres" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="kite_suspect_plan" class="col-sm-2 control-label">Kite Suspect Plan</label>
+    <div class="col-sm-3">
+      <input type="text" id="kite_suspect_plan" class="form-control">
+    </div>
+
+    <label for="two_sig_req_outsort_thres" class="col-sm-2 control-label">2 Sig Req Outsort Thrshld</label>
+    <div class="col-sm-3">
+      <input type="text" id="two_sig_req_outsort_thres" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="reset_excess_tran_emo" class="col-sm-2 control-label">Reset Excess Tran EMO</label>
+    <div class="col-sm-3">
+      <select id="reset_excess_tran_emo" class="form-control">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <label for="acct_type_update" class="col-sm-2 control-label">Account Type Update</label>
+    <div class="col-sm-3">
+      <input type="text" id="acct_type_update" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="cust_acct" class="col-sm-2 control-label">Customer Account</label>
+    <div class="col-sm-3">
+      <select id="cust_acct" class="form-control">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <label for="excess_tran_r2057" class="col-sm-2 control-label">Excess Tran R-2057</label>
+    <div class="col-sm-3">
+      <input type="text" id="excess_tran_r2057" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="aas_type" class="col-sm-2 control-label">AAS Type</label>
+    <div class="col-sm-3">
+      <input type="text" id="aas_type" class="form-control">
+    </div>
+
+    <label for="aas_indicator" class="col-sm-2 control-label">AAS Indicator</label>
+    <div class="col-sm-3">
+      <input type="text" id="aas_indicator" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="excess_occur_limit" class="col-sm-2 control-label">Excess Occur Limit</label>
+    <div class="col-sm-3">
+      <select id="excess_occur_limit" class="form-control">
+        <option>Select An Option</option>
+        <option>(0) Option Not Used</option>
+        <option>(1) Post-No_Debits At First Glance</option>
+        <option>(2) Post-No_Debits At Second Glance</option>
+        <option>(3) Post-No_Debits At Third Glance</option>
+      </select>
+    </div>
+
+    <label for="max_bal" class="col-sm-2 control-label">Max Bal</label>
+    <div class="col-sm-3">
+      <input type="text" id="max_bal" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="pay_accr_int_on_close" class="col-sm-2 control-label">Pay Accr Int On Close</label>
+    <div class="col-sm-3">
+      <select id="pay_accr_int_on_close" class="form-control">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <label for="cons_cyc_min_bal_type" class="col-sm-2 control-label">Cons Cyc Min Bal Type</label>
+    <div class="col-sm-3">
+      <input type="text" id="cons_cyc_min_bal_type" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="cn_cy_mn_bl" class="col-sm-2 control-label">Cn Cy Mn Bl</label>
+    <div class="col-sm-3">
+      <input type="text" id="cn_cy_mn_bl" class="form-control">
+    </div>
+
+    <label for="esc_sub_acct_plan" class="col-sm-2 control-label">Esc Sub Acct Plan</label>
+    <div class="col-sm-3">
+      <input type="text" id="esc_sub_acct_plan" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="acct_num_gen" class="col-sm-2 control-label">Acct Number Generator</label>
+    <div class="col-sm-3">
+      <select id="acct_num_gen" class="form-control">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <label for="sweep_excess_tran" class="col-sm-2 control-label">Sweep Excess Tran</label>
+    <div class="col-sm-3">
+      <input type="text" id="sweep_excess_tran" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="pcma_ind" class="col-sm-2 control-label">PCMA Ind</label>
+    <div class="col-sm-3">
+      <select id="pcma_ind" class="form-control">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <label for="post_ach" class="col-sm-2 control-label">Post ACH</label>
+    <div class="col-sm-3">
+      <input type="text" id="post_ach" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="special_ref_outsrt_thres" class="col-sm-2 control-label">Special Ref Outsrt Thrshld</label>
+    <div class="col-sm-3">
+      <input type="text" id="special_ref_outsrt_thres" class="form-control">
+    </div>
+
+    <label for="return_credits"class="col-sm-2 control-label">Return Credits</label>
+    <div class="col-sm-3">
+      <input type="text" id="return_credits" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="return_deb" class="col-sm-2 control-label">Return Debits</label>
+    <div class="col-sm-3">
+      <select id="return_deb" class="form-control">
+        <option>Select An Option</option>
+        <option>(D) Process Based On Statement Closure Field</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <label for="health_sav_acct" class="col-sm-2 control-label">Health Savings Acct</label>
+    <div class="col-sm-3">
+      <input type="text" id="health_sav_acct" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="benefit_mgmt_acct" class="col-sm-2 control-label">Benefit Mgmt Acct</label>
+    <div class="col-sm-3">
+      <input type="text" id="benefit_mgmt_acct" class="form-control">
+    </div>
+
+    <label for="legal_type" class="col-sm-2 control-label">Legal Type</label>
+    <div class="col-sm-3">
+      <input type="text" id="legal_type" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="allow_mtt_ss_trsf_rel" class="col-sm-2 control-label">Allow Mtt SS Trsf Rel</label>
+    <div class="col-sm-3">
+      <input type="text" id="allow_mtt_ss_trsf_rel" class="form-control">
+    </div>
+
+    <label for="rac_acct_ind" class="col-sm-2 control-label">RAC Account Ind</label>
+    <div class="col-sm-3">
+      <input type="text" id="rac_acct_ind" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="ta_nta" class="col-sm-2 control-label">TA/NTA</label>
+    <div class="col-sm-3">
+      <select id="ta_nta" class="form-control">
+        <option>Select An Option</option>
+        <option>(TA) Transaction Account</option>
+        <option>(NT) Non-Transaction Account</option>
+        <option>(NO) Not Using</option>
+      </select>
+    </div>
+
+    <label for="ceb_enroll" class="col-sm-2 control-label">CeB Enroll</label>
+    <div class="col-sm-3">
+      <input type="text" id="ceb_enroll" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="cash_mgmt_acct" class="col-sm-2 control-label">Cash Managment Acct</label>
+    <div class="col-sm-3">
+      <input type="text" id="cash_mgmt_acct" class="form-control">
+    </div>
+
+    <label for="posting_option" class="col-sm-2 control-label">Posting Option</label>
+    <div class="col-sm-3">
+      <input type="text" id="posting_option" class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="cps_indicator" class="col-sm-2 control-label">CPS Indicator</label>
+    <div class="col-sm-3">
+      <select id="cps_indicator" class="form-control">
+        <option>Select An Option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+
+    <label for="bal_sweep_alert" class="col-sm-2 control-label">Balance Sweep Alert</label>
+    <div class="col-sm-3">
+      <input type="text" id="bal_sweep_alert" class="form-control">
+    </div>
+  </div>
+  <!--<input type="submit" name="submit" value="submit"> -->
+  <button type="submit" class="btn btn-default col-sm-offset-2">Submit</button>
+</form>
+</div>
+
+<script>
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'focus'
+      });
+  });
+</script>
