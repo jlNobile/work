@@ -5,5 +5,4 @@ fwrite($myfile, $txt);
 $txt = "Jane Doe\n";
 fwrite($myfile, $txt);
 fclose($myfile);
-echo file_exists($myfile);
 ?>

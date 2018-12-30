@@ -7,238 +7,27 @@
   <title>Deposit Account Options</title>
   <meta name="description" content="Deposit Account Options">
   <meta name="James Lockard-Nobile">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/page1.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 </head>
 
 <body>
-  <form action="/action_page.php">
-  <fieldset>
-    <legend>Deposit Account Basic Information</legend>
-      <div>
-      <div class="float_left">
 
-      <!--<label for="name">Name:</label>
-      <input type="text" id="name"><br>
+  <div ng-view></div>
 
-      <label for="statement_market_name">Statement Market Name:</label>
-      <input type="text" id="statement_market_name"><br>
-
-      <label for="dep_cat">Deposit Catagory:</label>
-      <select id="dep_cat">
-        <option>Select An Option</option>
-        <option>(C) Certificate Of Deposit</option>
-        <option>(D) Demand Deposit Account</option>
-        <option>(K) Revolving Line Of Credit</option>
-        <option>(L) Line Of Credit</option>
-        <option>(M) Money Market</option>
-        <option>(N) NOW Account</option>
-        <option>(R) Repurchase Agreement</option>
-        <option>(S) Savings Account</option>
-      </select><br>
-
-      <label for="retirement_plan_type">Retirement Plan Type:</label>
-      <input type="text" id="retirement_plan_type"><br>
-
-      <label for="stmt_cycle_code">Stmt Cycle Code:</label>
-      <input type="text" id="stmt_cycle_code"><br>
-
-      <label for="due_from_bank_acct">Due From Bank Account:</label>
-      <select id="due_from_bank_acct_list">
-        <option>Select An Option</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select><br> -->
-
-      <label for="club_acct">Club Account:</label>
-      <select id="club_acct">
-        <option>Select An Option</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select><br>
-
-      <label for="bulkfile">Bulkfile:</label>
-      <input type="text" id="bulkfile"><br>
-
-      <label for="sig_grace_days">Signiture Grace Days:</label>
-      <input type="text" id="sig_grace_days"><br>
-
-      <label for="kite_suspect_plan">Kite Suspect Plan:</label>
-      <input type="text" id="kite_suspect_plan"><br>
-
-      <label for="reset_excess_tran_emo">Reset Excess Tran EMO:</label>
-      <select id="reset_excess_tran_emo">
-        <option>Select An Option</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select><br>
-
-      <label for="cust_acct">Customer Account:</label>
-      <select id="cust_acct">
-        <option>Select An Option</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select><br>
-
-      <label for="aas_type">AAS Type:</label>
-      <input type="text" id="aas_type"><br>
-
-      <label for="excess_occur_limit">Excess Occur Limit:</label>
-      <select id="excess_occur_limit">
-        <option>Select An Option</option>
-        <option>(0) Option Not Used</option>
-        <option>(1) Post-No_Debits At First Glance</option>
-        <option>(2) Post-No_Debits At Second Glance</option>
-        <option>(3) Post-No_Debits At Third Glance</option>
-      </select><br>
-
-      <label for="pay_accr_int_on_close">Pay Accr Int On Close:</label>
-      <select id="pay_accr_int_on_close">
-        <option>Select An Option</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select><br>
-
-      <label for="cn_cy_mn_bl">Cn Cy Mn Bl:</label>
-      <input type="text" id="cn_cy_mn_bl"><br>
-
-      <label for="acct_num_gen">Acct Number Generator:</label>
-      <select id="acct_num_gen">
-        <option>Select An Option</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select><br>
-
-      <label for="pcma_ind">PCMA Ind:</label>
-      <select id="pcma_ind">
-        <option>Select An Option</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select><br>
-
-      <label for="special_ref_outsrt_thres">Special Ref Outsrt Thrshld:</label>
-      <input type="text" id="special_ref_outsrt_thres"><br>
-
-      <label for="return_deb">Return Debits:</label>
-      <select id="return_deb">
-        <option>Select An Option</option>
-        <option>(D) Process Based On Statement Closure Field</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select><br>
-
-      <label for="benefit_mgmt_acct">Benefit Mgmt Acct:</label>
-      <input type="text" id="benefit_mgmt_acct"><br>
-
-      <label for="allow_mtt_ss_trsf_rel">Allow Mtt SS Trsf Rel:</label>
-      <input type="text" id="allow_mtt_ss_trsf_rel"><br>
-
-      <label for="ta_nta">TA/NTA:</label>
-      <select id="ta_nta">
-        <option>Select An Option</option>
-        <option>(TA) Transaction Account</option>
-        <option>(NT) Non-Transaction Account</option>
-        <option>(NO) Not Using</option>
-      </select><br>
-
-      <label for="cash_mgmt_acct">Cash Managment Acct:</label>
-      <input type="text" id="cash_mgmt_acct"><br>
-
-      <label for="cps_indicator">CPS Indicator:</label>
-      <select id="cps_indicator">
-        <option>Select An Option</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select><br>
-    </div>
-    <div id="right_col">
-      <!--<label class="spacer_label"></label>
-      <input class="spacer_input"><br>
-      <label class="spacer_label"></label>
-      <input class="spacer_input"><br>
-
-      <label for="processing_level">Processing Level:</label>
-      <input type="text" id="processing_level"><br>
-
-      <label for="cost_center">Cost Center:</label>
-      <input type="text" id="cost_center"><br>
-
-      <label for="analysis_cycle_code">Analysis Cycle Code:</label>
-      <input type="text" id="analysis_cycle_code"><br>-->
-
-      <label for="passbook_acct">Passbook Account:</label>
-      <input type="text" id="passbook_acct"><br>
-
-      <label for="empl_acct">Employee Account:</label>
-      <input type="text" id="empl_acct"><br>
-
-      <label for="coll_disb_bal_basis">Coll/Disb Bal Basis:</label>
-      <input type="text" id="coll_disb_bal_basis"><br>
-
-      <label for="high_dollar_outsort_thres">High $ Outsort Threshold:</label>
-      <input type="text" id="high_dollar_outsort_thres"><br>
-
-      <label for="two_sig_req_outsort_thres">2 Sig Req Outsort Thrshld:</label>
-      <input type="text" id="two_sig_req_outsort_thres"><br>
-
-      <label for="acct_type_update">Account Type Update:</label>
-      <input type="text" id="acct_type_update"><br>
-
-      <label for="excess_tran_r2057">Excess Tran R-2057:</label>
-      <input type="text" id="excess_tran_r2057"><br>
-
-      <label for="aas_indicator">AAS Indicator:</label>
-      <input type="text" id="aas_indicator"><br>
-
-      <label for="max_bal">Max Bal:</label>
-      <input type="text" id="max_bal"><br>
-
-      <label for="cons_cyc_min_bal_type">Cons Cyc Min Bal Type:</label>
-      <input type="text" id="cons_cyc_min_bal_type"><br>
-
-      <label for="esc_sub_acct_plan">Esc Sub Acct Plan:</label>
-      <input type="text" id="esc_sub_acct_plan"><br>
-
-      <label for="sweep_excess_tran">Sweep Excess Tran:</label>
-      <input type="text" id="sweep_excess_tran"><br>
-
-      <label for="post_ach">Post ACH:</label>
-      <input type="text" id="post_ach"><br>
-
-      <label for="return_credits">Return Credits:</label>
-      <input type="text" id="return_credits"><br>
-
-      <label for="health_sav_acct">Health Savings Acct:</label>
-      <input type="text" id="health_sav_acct"><br>
-
-      <label for="legal_type">Legal Type:</label>
-      <input type="text" id="legal_type"><br>
-
-      <label for="rac_acct_ind">RAC Account Ind:</label>
-      <input type="text" id="rac_acct_ind"><br>
-
-      <label for="ceb_enroll">CeB Enroll:</label>
-      <input type="text" id="ceb_enroll"><br>
-
-      <label for="posting_option">Posting Option:</label>
-      <input type="text" id="posting_option"><br>
-
-      <label for="bal_sweep_alert">Balance Sweep Alert:</label>
-      <input type="text" id="bal_sweep_alert"><br>
-
-    </div>
-    </div>
-    <input type="submit" value="Submit">
-  </fieldset>
-</form>
-
-<script>
-// When the user clicks on div, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
-  <!-- <script src="js/scripts.js"></script> -->
+  <script>
+  var app = angular.module("myApp", ["ngRoute"]);
+  app.config(function($routeProvider) {
+      $routeProvider
+      .when("/", {
+          templateUrl : "page1.htm"
+      });
+  });
+  </script>
 </body>
 </html>
